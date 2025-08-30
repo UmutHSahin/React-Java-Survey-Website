@@ -379,8 +379,4 @@ npm run dev
 
 ---
 
-<div align="center">
 
-**❤️ ile geliştirildi | Built with ❤️**
-
-</div>
