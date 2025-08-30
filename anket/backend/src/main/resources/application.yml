@@ -1,0 +1,54 @@
+# Spring Boot Uygulama Konfigürasyonu
+# Application Configuration for Spring Boot
+
+server:
+  port: 8080  # Sunucu portu - Server port
+  servlet:
+    context-path: /api  # API için temel yol - Base path for API
+
+spring:
+  # Veritabanı Konfigürasyonu - Database Configuration (PostgreSQL Docker)
+  datasource:
+    url: jdbc:postgresql://localhost:5433/anket_db  # PostgreSQL Docker database
+    username: anket_user  # PostgreSQL username
+    password: anket123  # PostgreSQL password
+    driver-class-name: org.postgresql.Driver  # PostgreSQL driver
+  
+  # JPA/Hibernate Konfigürasyonu - JPA/Hibernate Configuration
+  jpa:
+    hibernate:
+      ddl-auto: update  # Veritabanı şemasını otomatik güncelle - Auto update database schema
+    show-sql: true  # SQL sorgularını konsola yazdır - Show SQL queries in console
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect  # PostgreSQL dialect
+        format_sql: true  # SQL'i düzenli formatta göster - Format SQL queries
+    defer-datasource-initialization: true  # Veri başlatmayı ertele
+
+  # Jackson JSON Konfigürasyonu - Jackson JSON Configuration
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false  # Tarihleri timestamp olarak yazma
+    time-zone: Europe/Istanbul  # Türkiye saat dilimi
+
+# Logging Konfigürasyonu - Logging Configuration
+logging:
+  level:
+    com.anket: DEBUG  # Uygulama loglarını detaylı göster - Show detailed application logs
+    org.springframework.security: DEBUG  # Security loglarını göster
+    org.hibernate.SQL: DEBUG  # SQL sorgularını göster
+    org.springframework.web: DEBUG  # Web request logları
+    org.springframework.security.web: TRACE  # Security web trace
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"  # Konsol log formatı
+
+# JWT Token Konfigürasyonu - JWT Token Configuration
+jwt:
+  secret: anketUygulamasiGizliAnahtar2024!  # JWT için gizli anahtar - Secret key for JWT
+  expiration: 86400000  # Token geçerlilik süresi (24 saat - 24 hours in milliseconds)
+
+# CORS Konfigürasyonu - CORS Configuration
+cors:
+  allowed-origins: "http://localhost:5173,http://localhost:3000"  # İzin verilen origin'ler - Allowed origins
+  allowed-methods: "GET,POST,PUT,DELETE,OPTIONS"  # İzin verilen HTTP metodları - Allowed HTTP methods
+  allowed-headers: "*"  # İzin verilen header'lar - Allowed headers
