@@ -201,52 +201,15 @@ npm run dev
 
 ---
 
-## 🔒 **Security & Privacy**
-
-- **Data Encryption**: All sensitive data encrypted at rest and in transit
-- **Anonymous Responses**: Participant privacy protection
-- **Input Validation**: Comprehensive server-side validation
-- **CORS Protection**: Controlled cross-origin resource sharing
-- **SQL Injection Prevention**: Parameterized queries and ORM protection
-
----
-
-## 🤝 **Contributing**
-
-We welcome contributions! Please follow these steps:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/NewFeature`)
-3. Commit your changes (`git commit -m 'Add NewFeature'`)
-4. Push to branch (`git push origin feature/NewFeature`)
-5. Open a Pull Request
-
----
-
-## 📝 **License**
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
 ## 👨‍💻 **Author**
 
-**Developer**: [Your Name]  
-**Email**: [your.email@example.com]  
-**GitHub**: [@yourusername](https://github.com/yourusername)
-
+**Developer**: Umut Hasan Sahin
+**GitHub**: https://github.com/UmutHSahin
 ---
 
-## 🙏 **Acknowledgments**
 
-- Spring Boot community for excellent framework
-- React team for powerful UI development tools
-- PostgreSQL community for robust database solutions
-- Open source contributors and supporters
 
----
-
-# 🗂️ Akıllı Anket Uygulaması
+# 🗂️ Akıllı Anket Uygulaması (TURKCE)
 
 ---
 
@@ -406,50 +369,13 @@ npm run dev
 - `POST /api/submit-response` - Anket yanıtını gönder
 - `GET /api/survey/{id}/results` - Anket analitiğini getir
 
----
-
-## 🔒 **Güvenlik ve Gizlilik**
-
-- **Veri Şifreleme**: Tüm hassas veriler hem dinlenme hem de aktarım sırasında şifrelenir
-- **Anonim Yanıtlar**: Katılımcı gizliliği koruması
-- **Girdi Doğrulama**: Kapsamlı sunucu tarafı doğrulama
-- **CORS Koruması**: Kontrollü çapraz köken kaynak paylaşımı
-- **SQL Enjeksiyon Önleme**: Parametreli sorgular ve ORM koruması
-
----
-
-## 🤝 **Katkıda Bulunma**
-
-Katkılarınızı memnuniyetle karşılıyoruz! Lütfen şu adımları izleyin:
-
-1. Depoyu fork edin
-2. Özellik dalı oluşturun (`git checkout -b feature/YeniOzellik`)
-3. Değişikliklerinizi commit edin (`git commit -m 'YeniOzellik ekle'`)
-4. Dalı push edin (`git push origin feature/YeniOzellik`)
-5. Pull Request açın
-
----
-
-## 📝 **Lisans**
-
-Bu proje MIT Lisansı altında lisanslanmıştır - detaylar için [LICENSE](LICENSE) dosyasına bakın.
 
 ---
 
 ## 👨‍💻 **Geliştirici**
 
-**İsim**: [Your Name]  
-**E-posta**: [your.email@example.com]  
-**GitHub**: [@yourusername](https://github.com/yourusername)
-
----
-
-## 🙏 **Teşekkürler**
-
-- Mükemmel framework için Spring Boot topluluğu
-- Güçlü UI geliştirme araçları için React ekibi
-- Sağlam veritabanı çözümleri için PostgreSQL topluluğu
-- Açık kaynak katkıda bulunanlar ve destekçiler
+**İsim**: Umut Hasan Sahin  
+**GitHub**: https://github.com/UmutHSahin
 
 ---
 
