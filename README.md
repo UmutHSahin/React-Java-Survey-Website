@@ -1,7 +1,5 @@
 # React-Java-Survey-Website
 
-# 🗂️ Smart Survey Application
-
 <div align="center">
 
 [![Java](https://img.shields.io/badge/Java-17+-orange.svg)](https://openjdk.java.net/)
